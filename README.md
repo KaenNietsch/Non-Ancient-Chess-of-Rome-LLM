@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/npm/feather-icons/dist/icons/award.svg" width="32" height="32" align="top"> Non-Ancient Chess of Rome
+# <img src="https://api.iconify.design/feather/award.svg?color=%23d4af37" width="32" height="32" align="top"> Non-Ancient Chess of Rome
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue)
 ![Panda3D](https://img.shields.io/badge/Panda3D-1.10-orange)
@@ -9,14 +9,14 @@ A full-stack 3D chess arena where 10 different LLM providers can be matched agai
 
 ---
 
-## <img src="https://cdn.jsdelivr.net/npm/feather-icons/dist/icons/monitor.svg" width="24" height="24" align="top"> Engine Rendering and Interface
+## <img src="https://api.iconify.design/feather/monitor.svg?color=%23d4af37" width="24" height="24" align="top"> Engine Rendering and Interface
 
 The interface is built completely using Panda3D DirectGUI, bypassing standard HTML/CSS wrappers for a native 3D experience.
 
-### <img src="https://cdn.jsdelivr.net/npm/feather-icons/dist/icons/layout.svg" width="20" height="20" align="top"> Main Menu
+### <img src="https://api.iconify.design/feather/layout.svg?color=%23d4af37" width="20" height="20" align="top"> Main Menu
 ![Main Menu](screen_shots/Main_Menu.png)
 
-### <img src="https://cdn.jsdelivr.net/npm/feather-icons/dist/icons/server.svg" width="20" height="20" align="top"> Provider Selection
+### <img src="https://api.iconify.design/feather/server.svg?color=%23d4af37" width="20" height="20" align="top"> Provider Selection
 The system automatically detects the provider based on the API key prefix.
 <p align="center">
   <img src="screen_shots/LLM_Select_Screen.png" width="32%">
@@ -24,10 +24,10 @@ The system automatically detects the provider based on the API key prefix.
   <img src="screen_shots/LLM_Select_Screen3.png" width="32%">
 </p>
 
-### <img src="https://cdn.jsdelivr.net/npm/feather-icons/dist/icons/settings.svg" width="20" height="20" align="top"> Settings Configuration
+### <img src="https://api.iconify.design/feather/settings.svg?color=%23d4af37" width="20" height="20" align="top"> Settings Configuration
 ![Settings Screen](screen_shots/Settings_Screen.gif)
 
-### <img src="https://cdn.jsdelivr.net/npm/feather-icons/dist/icons/clock.svg" width="20" height="20" align="top"> Match History
+### <img src="https://api.iconify.design/feather/clock.svg?color=%23d4af37" width="20" height="20" align="top"> Match History
 Games are serialized and can be analyzed move-by-move.
 <p align="center">
   <img src="screen_shots/Match_History_Screen.png" width="100%">
@@ -36,37 +36,37 @@ Games are serialized and can be analyzed move-by-move.
   <img src="screen_shots/Match_History_Screen.gif" width="100%">
 </p>
 
-### <img src="https://cdn.jsdelivr.net/npm/feather-icons/dist/icons/bar-chart-2.svg" width="20" height="20" align="top"> Match Analytics
+### <img src="https://api.iconify.design/feather/bar-chart-2.svg?color=%23d4af37" width="20" height="20" align="top"> Match Analytics
 ![Game Over](screen_shots/Game_Over_Screen.png)
 
 ---
 
-## <img src="https://cdn.jsdelivr.net/npm/feather-icons/dist/icons/git-merge.svg" width="24" height="24" align="top"> Architecture
+## <img src="https://api.iconify.design/feather/git-merge.svg?color=%23d4af37" width="24" height="24" align="top"> Architecture
 
 ```text
-main.py                → game_3d.py (Panda3D ShowBase)
-├── src/
-│   ├── chess_renderer.py    → 3D board, GLB models, lighting pipeline
-│   ├── background_show.py   → Orbital camera logic
-│   ├── api_manager.py       → LLM provider integrations
-│   ├── config_manager.py    → Persistent configuration state
-│   ├── stats_tracker.py     → Move analytics and history serialization
-│   └── screens/
-│       ├── base_screen.py        → Custom UI toolkit
-│       ├── main_menu.py         
-│       ├── mode_select_screen.py 
-│       ├── settings_screen.py  
-│       ├── game_screen.py      
-│       ├── history_screen.py   
-│       └── replay_screen.py    
-├── bot_llm.py              → Network retry logic and validation
-├── bot_local.py            → Negamax engine and board evaluation
-└── match_history.json      → Serialized match records
+main.py                â†’ game_3d.py (Panda3D ShowBase)
+â”œâ”€â”€ src/
+â”‚   â”œâ”€â”€ chess_renderer.py    â†’ 3D board, GLB models, lighting pipeline
+â”‚   â”œâ”€â”€ background_show.py   â†’ Orbital camera logic
+â”‚   â”œâ”€â”€ api_manager.py       â†’ LLM provider integrations
+â”‚   â”œâ”€â”€ config_manager.py    â†’ Persistent configuration state
+â”‚   â”œâ”€â”€ stats_tracker.py     â†’ Move analytics and history serialization
+â”‚   â””â”€â”€ screens/
+â”‚       â”œâ”€â”€ base_screen.py        â†’ Custom UI toolkit
+â”‚       â”œâ”€â”€ main_menu.py         
+â”‚       â”œâ”€â”€ mode_select_screen.py 
+â”‚       â”œâ”€â”€ settings_screen.py  
+â”‚       â”œâ”€â”€ game_screen.py      
+â”‚       â”œâ”€â”€ history_screen.py   
+â”‚       â””â”€â”€ replay_screen.py    
+â”œâ”€â”€ bot_llm.py              â†’ Network retry logic and validation
+â”œâ”€â”€ bot_local.py            â†’ Negamax engine and board evaluation
+â””â”€â”€ match_history.json      â†’ Serialized match records
 ```
 
 ---
 
-## <img src="https://cdn.jsdelivr.net/npm/feather-icons/dist/icons/share-2.svg" width="24" height="24" align="top"> Multi-LLM Orchestration
+## <img src="https://api.iconify.design/feather/share-2.svg?color=%23d4af37" width="24" height="24" align="top"> Multi-LLM Orchestration
 
 The `api_manager.py` handles communication across 10 different providers through a unified completion interface. API keys are parsed by their prefix to route requests to the correct endpoint.
 
@@ -81,13 +81,13 @@ The `api_manager.py` handles communication across 10 different providers through
 | Together | `/v1/chat/completions` | bare token |
 | Mistral | `/v1/chat/completions` | bare token |
 | OpenRouter | `/api/v1/chat/completions` | `sk-or-` |
-| Ollama | `localhost:11434/v1/chat/completions` | — |
+| Ollama | `localhost:11434/v1/chat/completions` | â€” |
 
 Model lists are fetched dynamically and cached. The cache is invalidated if the API signature changes.
 
 ---
 
-## <img src="https://cdn.jsdelivr.net/npm/feather-icons/dist/icons/shield.svg" width="24" height="24" align="top"> API Error Handling and Fallbacks
+## <img src="https://api.iconify.design/feather/shield.svg?color=%23d4af37" width="24" height="24" align="top"> API Error Handling and Fallbacks
 
 Language models frequently output invalid UCI strings or hallucinate illegal moves. `bot_llm.py` implements a robust retry mechanism.
 
@@ -101,7 +101,7 @@ Metrics such as `tokens_in`, `tokens_out`, `delay_ms`, and `illegal_attempts` ar
 
 ---
 
-## <img src="https://cdn.jsdelivr.net/npm/feather-icons/dist/icons/cpu.svg" width="24" height="24" align="top"> Local Negamax Engine
+## <img src="https://api.iconify.design/feather/cpu.svg?color=%23d4af37" width="24" height="24" align="top"> Local Negamax Engine
 
 `bot_local.py` contains a custom engine implementing Negamax with Alpha-Beta pruning, running at depth 3.
 
@@ -112,7 +112,7 @@ Metrics such as `tokens_in`, `tokens_out`, `delay_ms`, and `illegal_attempts` ar
 
 ---
 
-## <img src="https://cdn.jsdelivr.net/npm/feather-icons/dist/icons/pen-tool.svg" width="24" height="24" align="top"> Custom DirectGUI Framework
+## <img src="https://api.iconify.design/feather/pen-tool.svg?color=%23d4af37" width="24" height="24" align="top"> Custom DirectGUI Framework
 
 Standard UI libraries are often disjointed from the 3D scene. `base_screen.py` implements a native UI toolkit over DirectGUI.
 
@@ -124,7 +124,7 @@ All interface screens inherit from `BaseScreen` for consistency.
 
 ---
 
-## <img src="https://cdn.jsdelivr.net/npm/feather-icons/dist/icons/box.svg" width="24" height="24" align="top"> 3D Scene Pipeline
+## <img src="https://api.iconify.design/feather/box.svg?color=%23d4af37" width="24" height="24" align="top"> 3D Scene Pipeline
 
 The renderer (`chess_renderer.py`) manages the visual state of the board independently from the logical state.
 
@@ -135,7 +135,7 @@ The renderer (`chess_renderer.py`) manages the visual state of the board indepen
 
 ---
 
-## <img src="https://cdn.jsdelivr.net/npm/feather-icons/dist/icons/refresh-cw.svg" width="24" height="24" align="top"> Threaded Game Loop
+## <img src="https://api.iconify.design/feather/refresh-cw.svg?color=%23d4af37" width="24" height="24" align="top"> Threaded Game Loop
 
 The core match execution (`game_screen.py`) is decoupled from the rendering thread to prevent blocking the UI during network requests or deep engine searches.
 
@@ -145,7 +145,7 @@ The core match execution (`game_screen.py`) is decoupled from the rendering thre
 
 ---
 
-## <img src="https://cdn.jsdelivr.net/npm/feather-icons/dist/icons/terminal.svg" width="24" height="24" align="top"> Installation and Execution
+## <img src="https://api.iconify.design/feather/terminal.svg?color=%23d4af37" width="24" height="24" align="top"> Installation and Execution
 
 ### Windows Launcher
 Double-click `PLAY.bat`. The script detects the Python environment, resolves missing dependencies via pip, and starts the 3D application.
@@ -165,6 +165,6 @@ Provide your API keys through the in-game Settings menu, or prefix them directly
 
 ---
 
-## <img src="https://cdn.jsdelivr.net/npm/feather-icons/dist/icons/file-text.svg" width="24" height="24" align="top"> License
+## <img src="https://api.iconify.design/feather/file-text.svg?color=%23d4af37" width="24" height="24" align="top"> License
 
 MIT License.
