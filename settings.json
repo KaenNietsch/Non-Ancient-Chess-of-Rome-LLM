@@ -1,0 +1,21 @@
+{
+  "provider": "google",
+  "model": null,
+  "api_keys": {
+    "google": "",
+    "openrouter": "",
+    "nvidia": ""
+  },
+  "base_url": null,
+  "local_depth": 3,
+  "sound_enabled": true,
+  "music_enabled": true,
+  "animation_speed": 1.0,
+  "ai_params": {
+    "temperature": 0.1,
+    "max_tokens": 10,
+    "timeout": 30
+  },
+  "api_key": "",
+  "fullscreen": true
+}
