@@ -216,3 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# LLM Chess Project Specific
+settings.json
+match_history.json
+model_cache.json
