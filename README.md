@@ -64,7 +64,7 @@ main.py                → game_3d.py (Panda3D ShowBase)
 └── match_history.json      → Serialized match records
 
 ---
-
+```
 ## <img src="https://api.iconify.design/feather/share-2.svg?color=%23d4af37" width="24" height="24" align="top"> Multi-LLM Orchestration
 
 The `api_manager.py` handles communication across 10 different providers through a unified completion interface. API keys are parsed by their prefix to route requests to the correct endpoint.
