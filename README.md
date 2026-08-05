@@ -44,25 +44,24 @@ Games are serialized and can be analyzed move-by-move.
 ## <img src="https://api.iconify.design/feather/git-merge.svg?color=%23d4af37" width="24" height="24" align="top"> Architecture
 
 ```text
-main.py                â†’ game_3d.py (Panda3D ShowBase)
-â”œâ”€â”€ src/
-â”‚   â”œâ”€â”€ chess_renderer.py    â†’ 3D board, GLB models, lighting pipeline
-â”‚   â”œâ”€â”€ background_show.py   â†’ Orbital camera logic
-â”‚   â”œâ”€â”€ api_manager.py       â†’ LLM provider integrations
-â”‚   â”œâ”€â”€ config_manager.py    â†’ Persistent configuration state
-â”‚   â”œâ”€â”€ stats_tracker.py     â†’ Move analytics and history serialization
-â”‚   â””â”€â”€ screens/
-â”‚       â”œâ”€â”€ base_screen.py        â†’ Custom UI toolkit
-â”‚       â”œâ”€â”€ main_menu.py         
-â”‚       â”œâ”€â”€ mode_select_screen.py 
-â”‚       â”œâ”€â”€ settings_screen.py  
-â”‚       â”œâ”€â”€ game_screen.py      
-â”‚       â”œâ”€â”€ history_screen.py   
-â”‚       â””â”€â”€ replay_screen.py    
-â”œâ”€â”€ bot_llm.py              â†’ Network retry logic and validation
-â”œâ”€â”€ bot_local.py            â†’ Negamax engine and board evaluation
-â””â”€â”€ match_history.json      â†’ Serialized match records
-```
+main.py                → game_3d.py (Panda3D ShowBase)
+├── src/
+│   ├── chess_renderer.py    → 3D board, GLB models, lighting pipeline
+│   ├── background_show.py   → Orbital camera logic
+│   ├── api_manager.py       → LLM provider integrations
+│   ├── config_manager.py    → Persistent configuration state
+│   ├── stats_tracker.py     → Move analytics and history serialization
+│   └── screens/
+│       ├── base_screen.py        → Custom UI toolkit
+│       ├── main_menu.py         
+│       ├── mode_select_screen.py 
+│       ├── settings_screen.py  
+│       ├── game_screen.py      
+│       ├── history_screen.py   
+│       └── replay_screen.py    
+├── bot_llm.py              → Network retry logic and validation
+├── bot_local.py            → Negamax engine and board evaluation
+└── match_history.json      → Serialized match records
 
 ---
 
@@ -81,7 +80,7 @@ The `api_manager.py` handles communication across 10 different providers through
 | Together | `/v1/chat/completions` | bare token |
 | Mistral | `/v1/chat/completions` | bare token |
 | OpenRouter | `/api/v1/chat/completions` | `sk-or-` |
-| Ollama | `localhost:11434/v1/chat/completions` | â€” |
+| Ollama | `localhost:11434/v1/chat/completions` | — |
 
 Model lists are fetched dynamically and cached. The cache is invalidated if the API signature changes.
 
